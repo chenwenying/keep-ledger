@@ -1,0 +1,8 @@
+{
+    "successs": true,
+    "data": {
+        "period": "month",
+        "totalIncome": 10000,
+        "totalExpense": 5000
+    }
+}

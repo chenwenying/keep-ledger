@@ -1,0 +1,1 @@
+export const INIT_HEADER = 'header/INIT_HEADER';
