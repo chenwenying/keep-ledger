@@ -14,5 +14,8 @@ export const ListWrapper = styled.div`
 `
 
 export const ChartWrapper = styled.div`
-   margin-top: 10px;
+   margin-top: 50px;
+   .chart_container {
+       display: flex;
+   }
 `

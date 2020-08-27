@@ -54,7 +54,13 @@ class Home extends Component {
     }
 
     handleOk = (result) => {
-        console.log('result:', result)
+        this.setState({ showModal: false });
+        this.props.addListData({
+            key: 101,
+            category: result.category,
+            amount: result.amount.number,
+            creationDate: result.creationDate.format('YYYY-MM-DD')
+        });
     }
 
     handleCancel = () => {
@@ -79,6 +85,9 @@ const mapDispatchToProps = (dispatch) => {
             const action = actionCreators.getListInfo();
             dispatch(action);
         },
+        addListData: (item) => {
+            dispatch(actionCreators.addListData(item));
+        }
     }
 }
 

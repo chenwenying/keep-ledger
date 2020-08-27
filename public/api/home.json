@@ -7,91 +7,91 @@
                 "key": 1,
                 "category": "账单明细 1",
                 "amount": "680",
-                "creationDate": "2020-8-24"
+                "creationDate": "2020-08-24"
             },
             {
                 "key": 2,
                 "category": "账单明细 2",
                 "amount": "-100",
-                "creationDate":  "2020-8-24"
+                "creationDate":  "2020-08-24"
             },
             {
                 "key": 3,
                 "category": "账单明细 3",
                 "amount": "-54",
-                "creationDate":  "2020-8-24"
+                "creationDate":  "2020-08-24"
             },
             {
                 "key": 4,
                 "category": "账单明细 4",
                 "amount": "90",
-                "creationDate": "2020-8-24"
+                "creationDate": "2020-08-24"
             },
             {
                 "key": 5,
                 "category": "账单明细 5",
                 "amount": "-300",
-                "creationDate":  "2020-8-23"
+                "creationDate":  "2020-08-23"
             },
             {
                 "key": 6,
                 "category": "账单明细 6",
                 "amount": "524",
-                "creationDate":  "2020-8-23"
+                "creationDate":  "2020-08-23"
             },
             {
                 "key": 7,
                 "category": "账单明细 7",
                 "amount": "1000",
-                "creationDate": "2020-8-23"
+                "creationDate": "2020-08-23"
             },
             {
                 "key": 8,
                 "category": "账单明细 8",
                 "amount": "76",
-                "creationDate":  "2020-8-23"
+                "creationDate":  "2020-08-23"
             },
             {
                 "key": 9,
                 "category": "账单明细 9",
                 "amount": "23",
-                "creationDate":  "2020-8-22"
+                "creationDate":  "2020-08-22"
             },
             {
                 "key": 10,
                 "category": "账单明细 10",
                 "amount": "87",
-                "creationDate": "2020-8-22"
+                "creationDate": "2020-08-22"
             },
             {
                 "key": 11,
                 "category": "账单明细 11",
                 "amount": "-39",
-                "creationDate":  "2020-8-22"
+                "creationDate":  "2020-08-22"
             },
             {
                 "key": 12,
                 "category": "账单明细 12",
                 "amount": "-46",
-                "creationDate":  "2020-8-22"
+                "creationDate":  "2020-08-22"
             },
             {
                 "key": 13,
                 "category": "账单明细 13",
                 "amount": "87",
-                "creationDate": "2020-8-21"
+                "creationDate": "2020-08-21"
             },
             {
                 "key": 14,
                 "category": "账单明细 14",
                 "amount": "-39",
-                "creationDate":  "2020-8-21"
+                "creationDate":  "2020-08-21"
             },
             {
                 "key": 15,
                 "category": "账单明细 15",
                 "amount": "65",
-                "creationDate":  "2020-8-21"
+                "creationDate":  "2020-08-21"
             }
         ]
     }

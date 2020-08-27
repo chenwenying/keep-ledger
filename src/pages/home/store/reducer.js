@@ -1,20 +1,25 @@
 import * as constants from './constants';
-import { fromJS } from 'immutable';
 
-const defaultState = fromJS({
+const defaultState = {
     period: 'month',
     list: []
-});
+};
 
 export default (state = defaultState, action) => {
     switch (action.type) {
         case constants.INIT_LIST:
-            return state.merge({
-                period: action.period,
-                list: action.data
-            });
+            const newState = JSON.parse(JSON.stringify(state));
+            newState.list = [...action.data];
+            newState.period = action.period;
+            return newState;
         case constants.UPDATE_LIST:
-            return state.set('list', action.data);
+            const copyState = JSON.parse(JSON.stringify(state));
+            copyState.list = [...action.data];
+            return copyState;
+        case constants.ADD_ITEM:
+            const copyState2 = JSON.parse(JSON.stringify(state));
+            copyState2.list.unshift(action.data);
+            return copyState2;
         default:
             return state;
     }

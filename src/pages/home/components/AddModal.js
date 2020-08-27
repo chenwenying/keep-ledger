@@ -83,21 +83,29 @@ const PriceInput = ({ value = {}, onChange }) => {
 
 const AddModal = ({ visible, handleOk, handleCancel }) => {
   const [form] = Form.useForm();
-  // render() {
-  //   const { visible, handleOk, handleCancel } = this.props;
   const checkPrice = (rule, value) => {
     if (value.number >= 0) {
       return Promise.resolve();
     }
 
-    return Promise.reject('Price must be greater than zero!');
+    return Promise.reject('金额必须大于0!');
   };
 
   return (
     <Modal
       title="创建新的记账记录"
       visible={visible}
-      onOk={handleOk}
+      onOk={() => {
+        form
+          .validateFields()
+          .then(values => {
+            form.resetFields();
+            handleOk(values);
+          })
+          .catch(info => {
+            console.log('Validate Failed:', info);
+          });
+      }}
       onCancel={handleCancel}
       okText="确认"
       cancelText="取消"

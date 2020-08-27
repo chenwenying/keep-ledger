@@ -186,12 +186,13 @@ class List extends Component {
             <EditableTable list={list} updateData={updateData} />
         )
     }
-
 }
 
-const mapState = (state) => ({
-    list: state.getIn(['home', 'list'])
-})
+const mapState = (state) => {
+    return {
+        list: state.getIn(['home', 'list'])
+    }
+}
 
 const mapDispatch = (dispatch) => ({
     updateData: (newData) => {

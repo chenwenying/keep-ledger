@@ -1,5 +1,4 @@
 import * as constants from './constants';
-// import { fromJS } from 'immutable';
 import axios from 'axios';
 
 const initList = (data) => ({
@@ -21,5 +20,10 @@ export const getListInfo = () => {
 
 export const updateListData = (data) => ({
     type: constants.UPDATE_LIST,
+    data
+})
+
+export const addListData = (data) => ({
+    type: constants.ADD_ITEM,
     data
 })
